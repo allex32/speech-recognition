@@ -1,0 +1,13 @@
+
+{
+
+    "yandex": {
+        "file" : "file",
+        "key" : "developer_key"
+    },
+
+    "google": {
+        "file" : "file",
+        "key" : "key"
+    }
+}
