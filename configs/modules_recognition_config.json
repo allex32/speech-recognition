@@ -1,0 +1,5 @@
+{
+    "yandex":"./module_recognition/yandex_recognition.js",
+    "google":"./module_recognition/google_recognition.js",
+    "empty":"./module_recognition/empty_recognition.js"
+}

@@ -3,24 +3,41 @@
  */
 
 var kue = require('kue'),
+    util= require('util'),
+    jf = require('jsonfile')
     jobs = kue.createQueue();
-//на данный момент используется как заглушка
-//сами task-и могут браться из различных источников
-var audio_job = jobs.create('audio', {
-    title: 'speech_recognition',
-    file: './resources/yandex.mp3',
-    lang: 'ru-Ru',
-    filetype: 'mp3',
 
-    //переменная service на данный момент используется как заглушка
-    //для определения сервиса к которому будет обращаться процесс
-    service: 'yandex'
-}).priority('high').save(function (err) {
+
+
+ var jobFile='./configs/jobs.json';
+
+//получение job-ов из jobs.json
+ jf.readFile(jobFile,function(err,obj) {
     if (err)
-        throw  new Error(err);
-    else
-        console.log('Job ' + audio_job.id + ' is created');
-});
+        throw new Error(err);
+    else {
+        for(var job_key in obj) {
+            if(job_key=='audio') {
+                for(var keys in obj[job_key])
+                var audio_job = jobs.create(job_key,obj[job_key][keys]).save(function (err) {
+                    if (err)
+                        throw new Error(err);
+                    else {
+                        console.log('Job ' + audio_job.id + ' is created');
+                    }
+                })
+            }
+        }
+    }
+ });
+
+
+
+
+
+
+
+
 
 
 //event_handlers

@@ -14,17 +14,27 @@ jobs.process('audio', function (job, done) {
 
     var result = speech_recognition(job.data, getResponse);
 
-    function getResponse(err, httpResponse, xml, outFile) {
+    function getResponse(err, httpResponse, bodyresponse, outFile) {
         if (err) {
             console.log('ERROR ' + err);
             done(err);
+            return;
         }
 
         else {
-            if (outFile)
+            if (outFile) {
                 console.log('response is written in ' + outFile + ' file');
-            else
-                console.log(httpResponse.statusCode, xml);
+                done();
+                return;
+            }
+
+            if(httpResponse){
+                console.log(httpResponse.statusCode,bodyresponse);
+            }
+            else{
+                console.log(bodyresponse);
+            }
+
 
             done();
         }
