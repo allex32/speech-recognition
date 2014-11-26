@@ -2,10 +2,14 @@
  Поставщик task-ов для очереди
  */
 
-var kue = require('kue'),
-    util= require('util'),
-    jf = require('jsonfile')
-    jobs = kue.createQueue();
+var kue = require('kue');
+var redisSettings = require('./configs/redis_setting.json')
+
+var q = kue.createQueue(redisSettings.ConnectionSettings);
+
+var util= require('util'),
+    jf = require('jsonfile'),
+    jobs = q;
 
 
 

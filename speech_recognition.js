@@ -4,6 +4,7 @@
  */
 var type_of_module_config=require('./configs/modules_recognition_config.json');
 
+
 var speech_recognition_response = function(data, callback) {
 
     //получаем путь к необходимому модулю по названию сервиса

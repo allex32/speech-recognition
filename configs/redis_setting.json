@@ -1,0 +1,10 @@
+{
+    "ConnectionSettings" : {
+        "prefix": "q",
+         "redis": {
+            "port": 6379,
+            "host": "redis_db",
+            "db": 3
+        }
+    }
+}

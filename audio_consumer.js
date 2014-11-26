@@ -4,8 +4,9 @@
  */
 
 
-var kue = require('kue'),
-    jobs = kue.createQueue();
+var kue = require('kue');
+var q = kue.createQueue(redisSettings.ConnectionSettings);
+var jobs=q;
 
 
 var speech_recognition = require('./speech_recognition');
