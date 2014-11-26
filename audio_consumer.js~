@@ -5,7 +5,6 @@
 
 
 var kue = require('kue');
-var redisSettings = require('./configs/redis_setting.json');
 var q = kue.createQueue(redisSettings.ConnectionSettings);
 var jobs=q;
 
