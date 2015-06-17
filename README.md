@@ -10,26 +10,16 @@ Redis - http://redis.io/
 
 *node audio_producer.js*
 
-
 *node audio_consumer.js*
 
 ####audio_producer.js
 
-Отправляет указанный в нем же job в очередь. 
+Отправляет указанные в jobs.json задания в очередь.
 Так же в нем хранятся обработчики событий очереди
 *(job complete и job failed)*.
 
-Job в качестве примера один, объявлен непосредственно в *audio_producer.js* и имеет следующий вид:
 
-```
-var audio_job = jobs.create('audio', {
-     title: 'speech_recognition',
-     file: './resources/yandex.mp3',
-     lang: 'ru-Ru',
-     filetype: 'mp3',
-     service: 'yandex'
-}
-```
+
 
 
 ####audio_consumer.js
@@ -46,5 +36,16 @@ var audio_job = jobs.create('audio', {
 Описаны в configs/jobs.json.
 В качестве тестовых данных вписаны 4 job-a, для тестирования каждого из speech-api-модулей, модуля-"заглушки", и случая, если ни один из модулей не подойдет.
 
+Пример job-a.
+
+```
+var audio_job = jobs.create('audio', {
+     title: 'speech_recognition',
+     file: './resources/yandex.mp3',
+     lang: 'ru-Ru',
+     filetype: 'mp3',
+     service: 'yandex'
+}
+```
 
 
