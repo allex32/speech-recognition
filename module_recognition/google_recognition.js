@@ -34,7 +34,7 @@ var google_recognition_response = function(data,callback){
 
         }
 
-         google_speech(newOpts,google_response);
+        google_speech(newOpts,google_response);
 
         function google_response(err,result){
 

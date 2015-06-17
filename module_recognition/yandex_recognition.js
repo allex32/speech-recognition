@@ -19,7 +19,7 @@ var yandex_opt_config = function (data, callback) {
     callback(null, result);
 };
 
-var yandex_recognition_response = function(data,callback){
+var yandex_recognition_response = function(data,saveDirPath,callback){
 
 
         var self_callback = callback;
@@ -60,7 +60,8 @@ var yandex_recognition_response = function(data,callback){
                 //иначе, в данном случае, как пример, записываем ответ в файл
                 else {
                     var tmp = data.file.toString().lastIndexOf('.');
-                    var outFile = data.file.substring(0, tmp) + '.xml';
+                    var tmp_slash = data.file.toString().lastIndexOf('/');
+                    var outFile = saveDirPath+ data.file.substring(tmp_slash, tmp) + '.xml';
 
                     fs.writeFile(outFile, xml, function (err) {
                         if (err) {

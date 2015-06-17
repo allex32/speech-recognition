@@ -1,29 +1,142 @@
-{
-    "audio": {
-        "job1": {
-            "title": "audio_recog",
-            "file": "./resources/en.mp3",
-            "service": "google"
-
-        },
-
-        "job2": {
-            "title": "audio_recog",
-            "file": "./resources/yandex.mp3",
-            "service": "yandex"
-
-        },
-
-            "job3":{
-            "title":"ne va}I{no",
-            "file":"./empty.mp3",
-            "service":"empty"
-        },
-        "job4":{
-            "title":"error_test",
-            "file":"",
-            "service":"not service"
-        }
-
+[
+  {
+    "job": {
+      "title": "flec1.wav",
+      "file": "./resources/lecture1/flec1.wav",
+      "service": "yandex"
     }
-}
+  },
+  {
+    "job": {
+      "title": "flec10.wav",
+      "file": "./resources/lecture1/flec10.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec11.wav",
+      "file": "./resources/lecture1/flec11.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec12.wav",
+      "file": "./resources/lecture1/flec12.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec13.wav",
+      "file": "./resources/lecture1/flec13.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec14.wav",
+      "file": "./resources/lecture1/flec14.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec15.wav",
+      "file": "./resources/lecture1/flec15.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec16.wav",
+      "file": "./resources/lecture1/flec16.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec17.wav",
+      "file": "./resources/lecture1/flec17.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec18.wav",
+      "file": "./resources/lecture1/flec18.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec19.wav",
+      "file": "./resources/lecture1/flec19.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec2.wav",
+      "file": "./resources/lecture1/flec2.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec20.wav",
+      "file": "./resources/lecture1/flec20.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec3.wav",
+      "file": "./resources/lecture1/flec3.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec4.wav",
+      "file": "./resources/lecture1/flec4.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec5.wav",
+      "file": "./resources/lecture1/flec5.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec6.wav",
+      "file": "./resources/lecture1/flec6.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec7.wav",
+      "file": "./resources/lecture1/flec7.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec8.wav",
+      "file": "./resources/lecture1/flec8.wav",
+      "service": "yandex"
+    }
+  },
+  {
+    "job": {
+      "title": "flec9.wav",
+      "file": "./resources/lecture1/flec9.wav",
+      "service": "yandex"
+    }
+  }
+]

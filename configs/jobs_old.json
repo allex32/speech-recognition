@@ -1,0 +1,32 @@
+[
+        {"job": {
+            "title": "audio_recog",
+            "file": "./resources/en.mp3",
+            "service": "google"
+
+        }},
+
+        {"job": {
+            "title": "audio_recog",
+            "file": "./resources/yandex.mp3",
+            "service": "yandex"
+
+        }},
+
+        {   "job":{
+            "title":"ne va}I{no",
+            "file":"./empty.mp3",
+            "service":"empty"
+        }},
+        {"job":{
+            "title":"error_test",
+            "file":"",
+            "service":"not service"
+        }},
+        {"job":{
+            "title":"lect1",
+            "file":"./resources/flec1.wav",
+            "service":"yandex"
+        }}
+]
+    

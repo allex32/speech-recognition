@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<recognitionResults success="1">
+	<variant confidence="-0.45">Наверное из лекций наверное из лекций</variant>
+	<variant confidence="0">Наверное из тебя наверное из лекций</variant>
+	<variant confidence="0">Наверное для лекций наверное из лекций</variant>
+	<variant confidence="0">Наверное для тебя наверное из лекций</variant>
+	<variant confidence="0">Наверное из лекций наверное из злиться</variant>
+</recognitionResults>
